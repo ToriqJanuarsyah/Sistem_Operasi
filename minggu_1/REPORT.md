@@ -93,11 +93,15 @@ Eksplorasi sistem yang baru diinstall:
 1. Tampilkan informasi OS: cat /etc/os-release <br>
 ![js1_latihan1.5_cat_etc_os-release_1](image/js1_latihan1.5_cat_etc_os-release_1.png)
 
-
 2. Tampilkan versi kernel: uname -r <br>
 ![js1_latihan1.5_uname_-r_2](image/js1_latihan1.5_uname_-r_2.png)
 
 3. List partisi: lsblk <br>
 ![js1_latihan1.5_lsblk_3](image/js1_latihan1.5_lsblk_3.png)
+
 4. Check network connectivity: ping -c 4 google.com <br>
 ![js1_latihan1.5_ping_-c_4_google.com_4](image/js1_latihan1.5_ping_-c_4_google.com_4.png)
+
+5. Install dan jalankan htop untuk melihat resource usage
+![js1_latihan1.5_install_htop](image/js1_latihan1.5_install_htop.png) <br>
+![js1_latihan1.5_htop_5](image/js1_latihan1.5_htop_5.png)
