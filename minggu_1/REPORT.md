@@ -39,10 +39,10 @@ Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
 
 #### Jawaban 
 1. Download Ubuntu Server
-![j1(latihan_1.3)_instal_ubuntu_1](image/j1(latihan_1.3)_instal_ubuntu_1.PNG")
+![j1_latihan_1.3_instal_ubuntu_1](image/j1_latihan_1.3_instal_ubuntu_1.png")
 
 2. Login menggunakan user account dan password
-![j1(latihan_1.3)_instal_ubuntu_2](image/j1(latihan_1.3)_instal_ubuntu_2.PNG")
+![j1_latihan_1.3_instal_ubuntu_2](image/j1_latihan_1.3_instal_ubuntu_2.png")
 
 3. Tampilan Awal 
 minggu_1\image\j1(latihan 1.3) instal ubuntu 3.PNG
