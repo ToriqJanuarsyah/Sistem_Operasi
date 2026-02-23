@@ -62,8 +62,16 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 7. Dokumentasikan output dari setiap command
 
 #### Jawaban 
-1. Update package list: sudo apt update
+1. Update package list: sudo apt update<br>
 ![js1_latihan1.4_sudo_apt_update_1](image/js1_latihan1.4_sudo_apt_update_1.png)
 
-2. Upgrade packages: sudo apt upgrade
-![](image/)
+2. Upgrade packages: sudo apt upgrade <br>
+![js1_latihan1.4_sudo_apt_update_2](image/js1_latihan1.4_sudo_apt_upgrade_2.png)
+
+3. Install neofetch: sudo apt install neofetch <br>
+![js1_latihan1.4_sudo_apt_install_neofetch_3](image/js1_latihan1.4_sudo_apt_install_neofetch_3.png)
+
+4. Jalankan neofetch dan screenshot hasilnya <br>
+![js1_latihan1.4_neofetch_4](image/js1_latihan1.4_neofetch_4.png)
+
+
