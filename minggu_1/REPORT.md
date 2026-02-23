@@ -80,3 +80,24 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 6. Check memory dengan free -h <br>
 ![js1_latihan1.4_free_-h__6](image/js1_latihan1.4_free_-h.png_6.png)
 
+#### Latihan 1.5
+Eksplorasi sistem yang baru diinstall:
+1. Tampilkan informasi OS: cat /etc/os-release
+2. Tampilkan versi kernel: uname -r
+3. List partisi: lsblk
+4. Check network connectivity: ping -c 4 google.com
+5. Install dan jalankan htop untuk melihat resource usage
+6. Buat laporan singkat tentang konfigurasi sistem Anda
+
+#### Jawaban 
+1. Tampilkan informasi OS: cat /etc/os-release <br>
+![js1_latihan1.5_cat_etc_os-release_1](image/js1_latihan1.5_cat_etc_os-release_1.png)
+
+
+2. Tampilkan versi kernel: uname -r <br>
+![js1_latihan1.5_uname_-r_2](image/js1_latihan1.5_uname_-r_2.png)
+
+3. List partisi: lsblk <br>
+![js1_latihan1.5_lsblk_3](image/js1_latihan1.5_lsblk_3.png)
+4. Check network connectivity: ping -c 4 google.com <br>
+![js1_latihan1.5_ping_-c_4_google.com_4](image/js1_latihan1.5_ping_-c_4_google.com_4.png)
