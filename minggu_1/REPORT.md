@@ -63,7 +63,7 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 
 #### Jawaban 
 1. Update package list: sudo apt update
-![j1_latihan_1.4_sudo_apt_update_1](image/j1_latihan_1.4_sudo_apt_update_1.png)
+![js1_latihan1.4_sudo_apt_update_1](image/js1_latihan1.4_sudo_apt_update_1.png)
 
 2. Upgrade packages: sudo apt upgrade
-![j1_latihan_1.4_sudo_apt_upgrade_2](image/j1_latihan_1.4_sudo_apt_upgarde_2.png)
+![](image/)
