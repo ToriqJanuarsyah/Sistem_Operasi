@@ -78,5 +78,5 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 ![js1_latihan1.4_df_-h_5](image/js1_latihan1.4_df_-h_5.png)
 
 6. Check memory dengan free -h <br>
-![js1_latihan1.4_free_-h__6](image/js1_latihan1.4_free_-h_6.png)
+![js1_latihan1.4_free_-h__6](image/js1_latihan1.4_free_-h.png_6.png)
 
