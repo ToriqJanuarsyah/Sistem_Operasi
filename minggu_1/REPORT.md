@@ -21,13 +21,13 @@ contoh :
 - linux => Penggunaan perintah top atau htop untuk memantau proses yang sedang berjalan di Ubuntu Server.
 
 #### Latihan 1.2
-1. Kapan sebaiknya menggunakan Windows vs Linux vs macOS? 
+1. Kapan sebaiknya menggunakan Windows vs Linux vs macOS? <br>
    Analisis berdasarkan use case: gaming, development, server, creative work, dan enterprise.
 
 #### Jawaban 
-- berdasarkan use case maka penggunaan yang tepat
-    Windows => gaming,Perkantoran dan Bisnis, Aplikasi Umum & Kompatibilitas Tinggi.
-    linux => Server dan Cloud Computing, Development dan Programming, Sistem yang Membutuhkan Stabilitas Tinggi. 
+- berdasarkan use case maka penggunaan yang tepat <br>
+    Windows => gaming,Perkantoran dan Bisnis, Aplikasi Umum & Kompatibilitas Tinggi. <br>
+    linux => Server dan Cloud Computing, Development dan Programming, Sistem yang Membutuhkan Stabilitas Tinggi. <br>
     macOS => Creative Work (Desain, Editing, Audio, Video), Ekosistem Apple, development iOS
 
 
@@ -51,7 +51,7 @@ Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
 3. Tampilan Awal 
 ![j1_latihan_1.3_instal_ubuntu_3](image/j1_latihan_1.3_instal_ubuntu_3.png)
 
-#### 1.4 
+#### Latihan 1.4 
 Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 1. Update package list: sudo apt update
 2. Upgrade packages: sudo apt upgrade
@@ -74,4 +74,9 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 4. Jalankan neofetch dan screenshot hasilnya <br>
 ![js1_latihan1.4_neofetch_4](image/js1_latihan1.4_neofetch_4.png)
 
+5. Check disk usage dengan df -h <br>
+![js1_latihan1.4_df_-h_5](image/js1_latihan1.4_df_-h_5.png)
+
+6. Check memory dengan free -h <br>
+![js1_latihan1.4_free_-h__6](image/js1_latihan1.4_free_-h_6.png)
 
