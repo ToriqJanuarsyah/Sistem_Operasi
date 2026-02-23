@@ -20,7 +20,7 @@ contoh :
 - windows => Penggunaan Task Manager untuk mengakhiri aplikasi yang tidak merespons.
 - linux => Penggunaan perintah top atau htop untuk memantau proses yang sedang berjalan di Ubuntu Server.
 
-#### 1.2
+#### Latihan 1.2
 1. Kapan sebaiknya menggunakan Windows vs Linux vs macOS? 
    Analisis berdasarkan use case: gaming, development, server, creative work, dan enterprise.
 
@@ -39,8 +39,7 @@ Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
 
 #### Jawaban 
 1. Download Ubuntu Server
-
-![j1(latihan 1.3) instal ubuntu 1](image/j1(latihan 1.3) instal ubuntu 1.png "j1(latihan 1.3) instal ubuntu 1")
+![j1(latihan_1.3)_instal_ubuntu_1](image/j1(latihan_1.3)_instal_ubuntu_1")
 
 2. Login menggunakan user account dan password
 minggu_1\image\j1(latihan 1.3) instal ubuntu 2.PNG
