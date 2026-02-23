@@ -10,8 +10,8 @@
 1. Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2 OS berbeda (Windows, macOS, atau Linux).
 
 #### Jawaban 
-1. apaajdah
-2.
+1. 
+2.tes
 3.
 4.
 5.  
