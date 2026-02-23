@@ -4,8 +4,8 @@
 <h4> NIM : 254107020075<h4>
 <h4> Kelas : 1-H <h4>
 
-## LATIHAN 1.10
-### Latihan 1.10.1
+## 1.10 Latihan
+### 1.10.1 Latihan Konseptual
 #### Latihan 1.1
 1. Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2 OS berbeda (Windows, macOS, atau Linux).
 
@@ -25,33 +25,41 @@ contoh :
    Analisis berdasarkan use case: gaming, development, server, creative work, dan enterprise.
 
 #### Jawaban 
-- gaming 
-    windows : Pilihan terbaik karena memiliki kompatibilitas paling luas untuk berbagai judul game.
-    linux : Bisa untuk gaming, tapi tidak semua game berjalan lancar karena keterbatasan dukungan pengembang.
-    macOS : Kurang disarankan untuk gamer serius karena pilihan game yang terbatas dibandingkan Windows.
-    kesimpulan :Gunakan Windows jika prioritas utama Anda adalah bermain game.
+- berdasarkan use case maka penggunaan yang teapt 
 
-- developmnet 
-    windows : Bagus untuk pengembangan aplikasi berbasis .NET atau Visual Studio
-    linux : Sangat disarankan karena menyediakan alat pengembangan yang lengkap dan sistem yang transparan.
-    macOS : Populer di kalangan pengembang karena berbasis Unix dan bisa digunakan untuk membuat aplikasi iPhone/Mac.
-    kesimpulan : Gunakan Linux atau macOS untuk pengalaman coding yang lebih efisien karena dukungan tools berbasis Unix.
+### 1.10.2 Latihan Praktikal 
+#### latihan 1.3
+Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
+1. Download Ubuntu Server ISO dari website resmi
+2. Create VM baru di VirtualBox (RAM: 2GB, Disk: 25GB)
+3. Install dengan automatic partitioning (guided)
+4. Buat user account dengan password yang kuat
+5. Reboot dan login ke sistem
+6. Dokumentasikan proses instalasi dengan screenshot key steps
 
-- server
-    windows : Digunakan pada lingkungan perusahaan yang bergantung pada layanan Microsoft
-    linux : Merupakan raja di dunia server dan cloud karena gratis, sangat stabil, dan aman.
-    macOS : Hampir tidak pernah digunakan untuk kebutuhan server skala besar. 
-    kesimpulan : Gunakan Linux karena mendominasi 90% beban kerja cloud publik di dunia.
+#### Jawaban 
+1. Download Ubuntu Server
+minggu_1\image\j1(latihan 1.3) instal ubuntu 1.PNG
 
-- creative work :
-    windows : Memiliki dukungan aplikasi kreatif yang baik seperti Adobe Suite.
-    linux : Kurang populer untuk bidang ini karena aplikasi kreatif profesional tertentu tidak tersedia secara native.
-    macOS :  Merupakan standar industri untuk editor video dan audio karena integrasi perangkat keras dan perangkat lunak yang sangat halus.
-    kesimpulan : Gunakan macOS jika Anda bekerja sebagai profesional di bidang desain atau multimedia
+2. Login menggunakan user account dan password
+minggu_1\image\j1(latihan 1.3) instal ubuntu 2.PNG
 
-- enterprise :
-    windows : Paling banyak digunakan di perkantoran karena integrasi ekosistem yang mudah untuk banyak karyawan.
-    linux : Digunakan untuk infrastruktur IT kantor, bukan untuk staf administratif biasa.
-    macOS : Sering digunakan di perusahaan startup atau agensi kreatif.
-    kesimpulan : Gunakan Windows untuk kebutuhan operasional kantor secara umum karena dukungan ekosistemnya yang besar.
+3. Tampilan Awal 
+minggu_1\image\j1(latihan 1.3) instal ubuntu 3.PNG
 
+#### 1.4 
+Setelah instalasi Ubuntu Server, lakukan tasks berikut:
+1. Update package list: sudo apt update
+2. Upgrade packages: sudo apt upgrade
+3. Install neofetch: sudo apt install neofetch
+4. Jalankan neofetch dan screenshot hasilnya
+5. Check disk usage dengan df -h
+6. Check memory dengan free -h
+7. Dokumentasikan output dari setiap command
+
+#### Jawaban 
+1. Update package list: sudo apt update
+minggu_1\image\j1(latihan 1.4) sudo apt update 1.PNG
+
+2. Upgrade packages: sudo apt upgrade
+minggu_1\image\j1(latihan 1.4) sudo apt upgrade 2.PNG
