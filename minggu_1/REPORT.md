@@ -5,7 +5,7 @@
 <h4> Kelas : 1-H <h4>
 
 ## 1.10 Latihan
-### 1.10.1 Latihan Konseptual
+### 1.10.1. Latihan Konseptual
 #### Latihan 1.1
 1. Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2 OS berbeda (Windows, macOS, atau Linux).
 
@@ -31,7 +31,7 @@ contoh :
     macOS => Creative Work (Desain, Editing, Audio, Video), Ekosistem Apple, development iOS
 
 
-### 1.10.2 Latihan Praktikal 
+### 1.10.2. Latihan Praktikal 
 #### latihan 1.3
 Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
 1. Download Ubuntu Server ISO dari website resmi
@@ -105,3 +105,17 @@ Eksplorasi sistem yang baru diinstall:
 5. Install dan jalankan htop untuk melihat resource usage
 ![js1_latihan1.5_install_htop](image/js1_latihan1.5_install_htop.png) <br>
 ![js1_latihan1.5_htop_5](image/js1_latihan1.5_htop_5.png)
+
+### 1.10.3. Latihan Refleksi 
+#### Latihan 1.6
+Ceritakan pengalaman Anda dengan sistem operasi:
+1. Sistem operasi apa yang Anda gunakan sehari-hari? (Windows, macOS, Linux, atau lainnya)
+2. Berapa lama Anda menggunakan sistem operasi tersebut?
+3. Apa yang Anda sukai dari sistem operasi tersebut?
+4. Apa tantangan atau masalah yang pernah Anda hadapi?
+5. Apakah Anda pernah menggunakan sistem operasi lain? Bandingkan pengalaman Anda.
+6. Setelah mempelajari bab ini, apakah ada sistem operasi lain yang ingin Anda coba? Mengapa?
+Tulis refleksi Anda dalam 300-500 kata disertai dengan dokumentasi.
+
+#### Jawaban 
+Dalam kehidupan sehari-hari, bisa dikatakan saya selalu menggunakan Windows. Saya sudah menggunakan sistem ini sejak pertama kali mengenal komputer hingga sekarang. Alasan utama saya tetap menggunakannya adalah kemudahannya, hampir semua aplikasi kerja, hiburan, hingga game bisa berjalan dengan mudah dan tidak ribet. Jika melihat dari sisi cara kerjanya, Windows memiliki keunggulan karena kemampuannya dalam menyesuaikan diri. Windows bisa mengenali berbagai macam perangkat keras secara otomatis, sehingga saya sebagai pengguna tidak perlu pusing memikirkan cara menyambungkan printer atau perangkat lainnya. Selama menggunakan dengan keunggulan yang saya sebutkan sebelumnya, tantangan dan kendala juga saya temui ditengah prosesnya. Tantangan yang paling sering saya hadapi dan cukup mengganggu adalah sistem pembaruan (update) yang sering kali muncul tiba-tiba dan memakan waktu lama, serta performa laptop yang sesekali terasa melambat setelah pemakaian jangka panjang karena sistem yang cukup berat. Sejauh ini, saya memang belum pernah mencoba sistem operasi lain secara mendalam karena sudah sangat terbiasa dengan Windows sejak kecil. Namun, setelah mempelajari materi/bab ini, saya merasa sangat tertarik untuk mencoba Linux. Saya merasa tertarik dengan apa yang saya pelajari mengenai Linux, terutama soal kebebasan dan efisiensinya. Ternyata Linux jauh lebih ringan, sangat stabil untuk urusan server, dan yang paling keren adalah sistem ini gratis serta terbuka bagi siapa saja yang ingin belajar. Mempelajari cara Linux mengelola memori dan file membuat saya ingin tahu lebih banyak bagaimana rasanya mengoperasikan komputer dengan kendali penuh.
