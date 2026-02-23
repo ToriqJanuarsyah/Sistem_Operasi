@@ -45,7 +45,7 @@ Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
 ![j1_latihan_1.3_instal_ubuntu_2](image/j1_latihan_1.3_instal_ubuntu_2.png)
 
 3. Tampilan Awal 
-minggu_1\image\j1(latihan 1.3) instal ubuntu 3.PNG
+![j1_latihan_1.3_instal_ubuntu_3](image/j1_latihan_1.3_instal_ubuntu_3.png)
 
 #### 1.4 
 Setelah instalasi Ubuntu Server, lakukan tasks berikut:
@@ -59,7 +59,7 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 
 #### Jawaban 
 1. Update package list: sudo apt update
-minggu_1\image\j1(latihan 1.4) sudo apt update 1.PNG
+![j1_latihan_1.4_sudo_apt_update_1](image/j1_latihan_1.4_sudo_apt_update_1.png)
 
 2. Upgrade packages: sudo apt upgrade
-minggu_1\image\j1(latihan 1.4) sudo apt upgrade 2.PNG
+![j1_latihan_1.4_sudo_apt_upgrade_2](image/j1_latihan_1.4_sudo_apt_upgarde_2.png)
