@@ -25,7 +25,11 @@ contoh :
    Analisis berdasarkan use case: gaming, development, server, creative work, dan enterprise.
 
 #### Jawaban 
-- berdasarkan use case maka penggunaan yang teapt 
+- berdasarkan use case maka penggunaan yang tepat
+    Windows => gaming,Perkantoran dan Bisnis, Aplikasi Umum & Kompatibilitas Tinggi.
+    linux => Server dan Cloud Computing, Development dan Programming, Sistem yang Membutuhkan Stabilitas Tinggi. 
+    macOS => Creative Work (Desain, Editing, Audio, Video), Ekosistem Apple, development iOS
+
 
 ### 1.10.2 Latihan Praktikal 
 #### latihan 1.3
