@@ -183,7 +183,7 @@ WARN dari data.log. (Hint: gunakan grep -E dengan pola alternatif)
 ### Jawaban 
 ![latihan2.4](image/latihan2.4.png)
 
-## Praktikum 2.10 substisui dengan sed (Aman di Filr Latihan)
+## Praktikum 2.10 substisui dengan sed (Aman di File Latihan)
 1.Siapkan file konfigurasi latihan: <br>
 ```
 1. cat > config.txt << 'EOF'
@@ -226,3 +226,24 @@ node:
 
 3. Filter hanya yang pemakaian disk di atas 80%: df -h | awk 'NR==1 || ($5+0) > 80 {print $1, $5, $6}'
  ![js2_prak2.11_filter_pemakaian_3](image/js2_prak2.11_filter_pemakaian_3.png)
+
+ ## Praktikum 2.12 MElihat Proses dengan ps
+ 1. Tampilkan semua proses (format BSD): ps aux |head <br>
+ ![js2_prak2.12_all_proses_1](image/js2_prak2.12_all_proses_1.png)
+
+ 2. Cari proses tertentu (misal sshd): ps aux | grep -i sshd <br>
+ ![js2_prak2.12_proses_sshd_2](image/js2_prak2.12_proses_sshd_2.PNG)
+
+## Praktikum 2.13 Monitoring Real-time dengan top
+1. Jalankan top: top <br>
+![js2_prak2.13_top_1](image/js2_prak2.13_top_1.png)
+
+## Praktikum 2.14 menghentikan proses dengan kill
+1. Jalankan proses dummy di background: sleep 300 & <br>
+![js2_prak2.14_dummy_1](image)
+
+2. Cari PID proses sleep: ps aux | grep -E "sleep 300" | grep -v grep
+
+![js2_prak2.14_cari_PID_2](image)
+
+3. Hentikan dengan SIGTERM: kill
