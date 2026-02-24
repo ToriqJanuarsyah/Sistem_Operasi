@@ -239,11 +239,53 @@ node:
 ![js2_prak2.13_top_1](image/js2_prak2.13_top_1.png)
 
 ## Praktikum 2.14 menghentikan proses dengan kill
-1. Jalankan proses dummy di background: sleep 300 & <br>
-![js2_prak2.14_dummy_1](image)
+1. Jalankan proses dummy di background: 
+```
+sleep 300 & 
+``` 
 
-2. Cari PID proses sleep: ps aux | grep -E "sleep 300" | grep -v grep
+![js2_prak2.14_dummy_1](image/js2_prak2.14_dummy_1.png)
 
-![js2_prak2.14_cari_PID_2](image)
+2. Cari PID proses sleep: 
+``` 
+ps aux | grep -E "sleep 300" | grep -v grep 
+```
 
-3. Hentikan dengan SIGTERM: kill
+![js2_prak2.14_cari_PID_2](image/js2_prak2.14_cari_PID_2.png)
+
+3. Hentikan dengan SIGTERM: 
+``` 
+kill <PID_PANDA> 
+```
+
+![js2_prak2.14_sigterm_3](image/js2_prak2.14_sigterm_3.png)
+
+4. Verifikasi proses berhenti:
+```
+ps aux | grep -E "sleep 300" | grep -v grep
+```
+
+![js2_prak2.14_verivikasi_4](image/js2_prak2.14_verivikasi_4.png)
+
+5. (Opsional) Jika proses sulit untuk dihentikan dan Anda membutukan untuk
+menghentikan proses tersebut, gunakan SIGKILL:
+```
+kill -9 <PID_ANDA>
+```
+
+## Praktikum 2.15 Cek Disk, Load, dan Service 
+1. cek penggunaan disk : df -h <br>
+![js2_prak2.15_cek_disk_1](image/js2_prak2.15_cek_disk_1.png)
+
+2. Cari direktori yang besar (contoh pada /var): sudo du -sh /var/* 2>/dev/null | sort -h | tail -n 10 <br>
+![js2_prak2.15_cari_direktori_2](image/js2_prak2.15_cari_direktori_2.png)
+
+3. cek load uptime: Uptime <br>
+![js2_prak2.15_uptime_3](image/js2_prak2.15_uptime_3.png)
+
+4. Cek service yang gagal: systemctl --failed <br>
+![js2_prak2.15_cek_service_ggl_4](image/js2_prak2.15_cek_service_ggl_4.png)
+
+5. Ambil log error terbaru (jika ada indikasi masalah): journalctl -xe | tail -n 50
+
+
