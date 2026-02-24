@@ -291,11 +291,51 @@ kill -9 <PID_ANDA>
 ## Praktikum 2.16 Monitoring Port dan Koneksi
 (Network Basics)
 1. Lihat interface dan IP: ip a <br>
-![js2_prak2.16_interface_IP_1](image)
+![js2_prak2.16_interface_IP_1](image/js2_prak2.16_interface_IP_1.png)
 
 2. Lihat routing table: ip r <br>
-![js2_prak2.16._routing_table_2](image)
+![js2_prak2.16._routing_table_2](image/js2_prak2.16._routing_table_2.png)
 
 3. Lihat port yang sedang listening: sudo ss -tulpn <br>
+![js2_prak2.16._port_3](image/js2_prak2.16._port_3.png)
 
-![js2_prak2.16._port_3](image)
+### Latihan 2.5 
+1. Pilih satu port yang listening dari output ss -tulpn(misal port 22), lalu
+tuliskan service/proses yang membukanya. Jelaskan kegunaan port tersebut
+secara singkat.
+
+### Jawaban 
+- Port yang Dipilih : 22
+- Service/Proses : sshd (OpenSSH Daemon)
+- Kegunaan Port : Port 22 digunakan untuk protokol SSH (Secure Shell) yang berfungsi untuk melakukan koneksi jarak jauh (remote login) ke server secara aman dan terenkripsi.
+
+## Latihan 
+### Latihan 2A
+- Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat,
+ID vendor:device, dan kernel driver in use.
+
+### jawaban 2A
+![js2_lat2A](image/js2_lat2A.png)
+1. nama perangkat : Ethernet controller: Intel Corporation 82540EM Gigabit Ethernet Controller.
+2. ID vendor:device => 8086:100e
+3. kernel driver : e1000
+
+### Latihan 2B
+1. Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan
+lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
+
+### jawaban 2B
+- findmnt /. <br>
+![js2_lat2B_1](image/js2_lat2B_1.png)
+- lsblk -f <br>
+![js2_lat2B_2](image/js2_lat2B_2.png)
+- Device Root: /dev/mapper/ubuntu--vg-ubuntu--lv
+- Tipe Filesystem: ext4
+- UUID: 70478099-b196-4874-8451-419998064b55
+
+### Latihan 2C
+1.   Buat file server.log berisi minimal 10 baris dengan variasi kata: INFO,
+WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
+
+### Jawaban 2C 
+![js2_lat2C](image)
