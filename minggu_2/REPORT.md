@@ -288,4 +288,14 @@ kill -9 <PID_ANDA>
 
 5. Ambil log error terbaru (jika ada indikasi masalah): journalctl -xe | tail -n 50
 
+## Praktikum 2.16 Monitoring Port dan Koneksi
+(Network Basics)
+1. Lihat interface dan IP: ip a <br>
+![js2_prak2.16_interface_IP_1](image)
 
+2. Lihat routing table: ip r <br>
+![js2_prak2.16._routing_table_2](image)
+
+3. Lihat port yang sedang listening: sudo ss -tulpn <br>
+
+![js2_prak2.16._port_3](image)
