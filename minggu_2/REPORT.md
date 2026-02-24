@@ -125,17 +125,60 @@ Cukup dengan melihat huruf paling depan pada hasil ls -l, kita bisa tahu bagaima
 
 ## Praktikum 2.7 Melihat Informasi udev
 1. Cek atribut udev untuk disk: udevadm info --query=all --name=/dev/sda | head -n 30  <br>
-![js2_prak2.7_atribut_udev_1](image)
+![js2_prak2.7_atribut_udev_1](image/js2_prak2.7_atribut_udev_1.png)
 
 2. (Opsional) monitor event udev (jalankan, lalu colok/lepas USB pada mesin
 fisik): sudo udevadm monitor <br>
-![js2_prak2.7_monitor_event_2](image)
+![js2_prak2.7_monitor_event_2](image/js2_prak2.7_monitor_event_2.png)
 
 ## Praktikum 2.8 membuat workspace praktikum 
-1. Buat direktori praktikum dan masuk ke dalamnya: 
-- mkdir -p ~/praktikum- os/week02
-- cd ~/praktikum-os/week02
-- pwd
-![js2_prak2.8_direktori_praktikum_1](image)
+1. Buat direktori praktikum dan masuk ke dalamnya:  <br>
+```
+1. mkdir -p ~/praktikum- os/week02
+2. cd ~/praktikum-os/week02
+3. pwd
+```
 
-2. 
+![js2_prak2.8_direktori_praktikum_1](image/js2_prak2.8_direktori_praktikum_1.png)
+
+2. buat beberapa file contoh : <br>
+```
+1. touch notes.txt data.log config.txt
+2. ls -lah
+```
+
+![js2_prak2.8_buat_file_2](image/js2_prak2.8_buat_file_2.png)
+
+3. isi file log contoh (simulasi): <br>
+```
+1. echo "INFO: service started' >> data.log
+2. echo "WARN: disk usage high" >> data.log
+3. echo "ERROR: failed to connect" >> data.log
+4. cat data.log
+```
+
+![js2_prak2.8_isi_file_log_3](image/js2_prak2.8_isi_file_log_3.png)
+
+4. Baca file dengan less: less data.log <br>
+
+![js2_prak2.8_baca_file_4](image/js2_prak2.8_baca_file_4.png)
+
+## Praktikum 2.9 Pencarian pola dengan grep
+1. Cari baris yang mengandung ERROR pada data.log: grep " ERROR " data.log <br>
+![Js2_prak2.9_CariBarisERROR_1](image/Js2_prak2.9_CariBarisERROR_1.png)
+
+2. Cari tanpa memperhatikan huruf besar/kecil: grep -i "error" data.log <br>
+![Js2_prak2.9_CariTnpaBesarKecil_2](image/Js2_prak2.9_CariTnpaBesarKecil_2.png)
+
+3. tampiilkan nomor baris : grep -n "WARN" data.log <br>
+![Js2_prak2.9_ShowNoBaris_3](image/Js2_prak2.9_ShowNoBaris_3.png)
+
+4. Tampilkan baris yang tidak cocok (invert match): grep -v "INFO" data.log <br>
+![Js2_prak2.9_tampilBarisTakCocok_4](image/Js2_prak2.9_tampilBarisTakCocok_4.png)
+
+### Latihan 2.4 
+1. Gunakan grep untuk menampilkan hanya baris yang mengandung INFO atau
+WARN dari data.log. (Hint: gunakan grep -E dengan pola alternatif)
+
+### Jawaban 
+![latihan2.4](image/latihan2.4.png)
