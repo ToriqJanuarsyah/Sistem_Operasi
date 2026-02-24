@@ -182,3 +182,47 @@ WARN dari data.log. (Hint: gunakan grep -E dengan pola alternatif)
 
 ### Jawaban 
 ![latihan2.4](image/latihan2.4.png)
+
+## Praktikum 2.10 substisui dengan sed (Aman di Filr Latihan)
+1.Siapkan file konfigurasi latihan: <br>
+```
+1. cat > config.txt << 'EOF'
+2. PORT=800
+3. MODE=dev
+4. SERVICE_NAME=myserever
+5. EOF
+6. cat congi.txt
+```
+
+![js2_prak2.10_FileLatihan_1](image/js2_prak2.10_FileLatihan_1.png)
+
+2. Ganti dev menjadi prod (tanpa mengubah file asli): sed 's/MODE=dev/MODE=prod/'  config.txt <br>
+
+![js2_prak2.10_devToprod_2](image/js2_prak2.10_devToprod_2.png)
+
+3. Terapkan perubahan langsung ke file (-i):
+```
+1. sed -i 's/MODE=dev/MODE=prod/' config.txt
+2. cat config.txt
+```
+
+![js2_prak2.10_perubahan_langsung_3](image/js2_prak2.10_perubahan_langsung_3.png)
+
+4. Ganti semua kemunculan kata (g untuk global), contoh ubah myserver menjadi
+node:
+```
+1. sed -i 's/myserver/node/g' config.txt
+2.cat config.txt
+```
+
+![js2_prak2.10_ganti_kata_4](image/js2_prak2.10_ganti_kata_4.png)
+
+## Praktikum 2.11 Ekstraksi kolom dengan awk
+1. lihat output df -h : df -h <br>
+![js2_prak2.11_output_df_1](image/js2_prak2.11_output_df_1.png)
+
+2. Ambil kolom filesystem dan persentase pemakaian: df -h | awk 'NR==1 {print $1, $5, $6} NR>1 {print $5, $6}'
+![js2_prak2.11_ambil_kolom_2](image/js2_prak2.11_ambil_kolom_2.png)
+
+3. Filter hanya yang pemakaian disk di atas 80%: df -h | awk 'NR==1 || ($5+0) > 80 {print $1, $5, $6}'
+ ![js2_prak2.11_filter_pemakaian_3](image/js2_prak2.11_filter_pemakaian_3.png)
