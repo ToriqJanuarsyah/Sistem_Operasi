@@ -191,7 +191,7 @@ WARN dari data.log. (Hint: gunakan grep -E dengan pola alternatif)
 3. MODE=dev
 4. SERVICE_NAME=myserever
 5. EOF
-6. cat congi.txt
+6. cat config.txt
 ```
 
 ![js2_prak2.10_FileLatihan_1](image/js2_prak2.10_FileLatihan_1.png)
@@ -338,4 +338,32 @@ lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
 WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
 
 ### Jawaban 2C 
-![js2_lat2C](image)
+![js2_lat2C](image/js2_lat2C.png)
+
+### Latihan 2D
+1.Gunakan sed untuk mengganti semua kata server menjadi node pada file
+latihan. Tunjukkan sebelum dan sesudah.
+
+### Jawaban 2D 
+- Sebelum : <br>
+![js2_lat2D](image/js2_lat2D.png)
+
+### Latihan 2E
+1. Gunakan df -h lalu awk untuk menampilkan filesystem yang penggunaan disk
+di atas 70%.
+
+### Jawaban 2E
+![js2_lat2E](image/js2_lat2E.png)
+
+### Latihan 2F
+1. Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan
+SIGTERM. Jelaskan beda SIGTERM vs SIGKILL.
+
+### Jawaban 2F
+![js2_lat2F](image/js2_lat2F.png)
+
+### Latihan 2G
+1. Gunakan systemctl --failed. Jika tidak ada yang gagal, pilih satu service aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
+
+### Jawaban 2G
+![js2_lat2G](image/s2_lat2G.png)
