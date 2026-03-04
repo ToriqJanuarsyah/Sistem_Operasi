@@ -14,12 +14,12 @@
     4. Menangani error dengan redirect ke error.log
 
 ### Jawaban Latihan 3.1
-"
+```
 #!/bin/bash
 echo "Berikut adalah 10 file terbesar di /var/log/"
 
 du -sh /var/log* 2> error.log | sort -rh | head -10 | tee large-log.txt
-" <br>
+``` 
 ![js3_lat3.1](image/js3_lst3.1_1.png)
 ![js3_lat3.1](image/js3_lst3.1_2.png)
 
@@ -32,9 +32,9 @@ du -sh /var/log* 2> error.log | sort -rh | head -10 | tee large-log.txt
 Hint: Gunakan cut, sort, dan operator redirect.
 
 ### Jawaban Latihan 3.2
-"
+```
 cat /etc/passwd | cut -d1 -f1 | sort > sorted.users.txt
-" <br>
+``` 
 ![js3_lat3.2](image/js3_lat3.2_1.png)
 
 ### Latihan 3.3 
@@ -45,7 +45,7 @@ cat /etc/passwd | cut -d1 -f1 | sort > sorted.users.txt
     4. Output ditampilkan di terminal DAN disimpan ke file
 
 ### Jawaban latihan 3.3
-"
+```
 #!/bin/bash
 LOGFILE="hasil_monitor.txt"
 
@@ -64,7 +64,7 @@ do
 done
 
 echo "Monitoring selesai. Hasil disimpan di $LOGFILE"
-" <br>
+```
 ![js3_lat3.3](image/js3_lat3.3_1.png)
 ![js3_lat3.3](image/js3_lat3.3_2.png)
 
