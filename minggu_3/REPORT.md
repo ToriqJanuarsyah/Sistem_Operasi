@@ -76,10 +76,18 @@ echo "Monitoring selesai. Hasil disimpan di $LOGFILE"
     4. Menyimpan daftar path lengkap ke file
 
 ### Jawaban Latihan 3.4
-"
-
-"
-![js3_lat3.4](image)
+```
+cat << 'EOF' > cari_conf.sh
+#!/bin/bash
+LIST_FILE="daftar_path_conf.txt"
+echo "Memindai sistem untuk mencari file .conf"
+JUMLAH=$(find / -name "*.conf" 2> /dev/null | tee $LIST_FILE | wc -l)
+echo "Pemindaian selesai"
+echo "Daftar path lengkap disimpan di : $LIST_FILE"
+echo "Total file .conf yang ditemukan sebanyak : $JUMLAH"
+EOF
+```
+![js3_lat3.4](image/js3_lat3.4_1.png)
 
 ### Latihan 3.5
 - Implementasikan script backup yang:
@@ -90,4 +98,29 @@ echo "Monitoring selesai. Hasil disimpan di $LOGFILE"
     5. Menambahkan timestamp di setiap log entry
 
 ### Jawaban Latihan 3.5
+```
+cat << 'EOF' > backup_uas.sh
+#!/bin/bash
+LOG_OK="backup-success.log"
+LOG_ERR="backup-error.log"
+tambah_waktu() {
+    while read baris; do echo "$(date '+%Y-%m-%d %H:%M:%S') - $baris"; done
+}
+tar -cvzf hasil_backup.tar.gz ./sumber_data \
+    1> >(tambah_waktu | tee -a $LOG_OK) \
+    2> >(tambah_waktu | tee -a $LOG_ERR)
+EOF
+```
+![js3_lat3.5](image/js3_lat3.5_1.png)
 
+- Untuk melihat apakah file tar.gz ada:
+```
+tar -tvf hasil_backup.tar.gz
+```
+![js3_lat3.5](image/js3_lat3.5_2.png)
+
+- Untuk melihat daftar file yang berhasil di-backup:
+```
+cat backup-error.log
+```
+![js3_lat3.5](image/js3_lat3.5_3.png)
