@@ -357,9 +357,9 @@ rm -rf work
         ![js4_Laporan1b](image/js4_laporan1b.png) <br>
         Struktur ini menunjukkan kemampuan Linux dalam menangani nested directories. Folder A di dalam folder D memiliki identitas yang berbeda dengan folder A di tingkat teratas karena memiliki jalur (path) yang unik.
     - Error yang ditemukan :
-        1. mv: cannot stat 'contoh': No such file or directory
+        1. mv: cannot stat 'contoh': No such file or directory <br>
         Penyebab: Terjadi inkonsistensi antara status file di disk dengan perintah yang diinput. Hal ini terjadi karena file asal telah diubah namanya atau dipindahkan pada langkah sebelumnya. Sistem tidak dapat melakukan operasi pada referensi yang sudah tidak ada.
-        2. rmdir: failed to remove 'B': Directory not empty
+        2. rmdir: failed to remove 'B': Directory not empty <br>
         Penyebab: Perintah rmdir memiliki proteksi internal yang hanya mengizinkan penghapusan direktori kosong untuk mencegah kehilangan data secara tidak sengaja. Direktori B masih memiliki sub-direktori F.
 
 2. Kesimpulan 
