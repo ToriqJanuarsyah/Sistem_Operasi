@@ -13,33 +13,33 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
   
 ### Jawaban Tugas Pendahuluan :
 1. direktori : 
-    - pwd: Print Working Directory - Menampilkan direktori aktual (lokasi dimana user berada saat ini)
-    - cd: Change Directory - Berpindah dari satu direktori ke direktori lain
-    - mkdir: Make Directory - Membuat direktori baru
-    - rmdir: Remove Directory - Menghapus direktori yang kosong
+    - pwd: Print Working Directory -> Menampilkan direktori aktual (lokasi dimana user berada saat ini)
+    - cd: Change Directory -> Berpindah dari satu direktori ke direktori lain
+    - mkdir: Make Directory -> Membuat direktori baru
+    - rmdir: Remove Directory -> Menghapus direktori yang kosong
 
 2. perintah :
     - cp: Copy - Mengkopi file atau direktori
-    format penggunaan: 
-    cp file_sumber file_tujuan          # copy file
-    cp -r dir_sumber dir_tujuan         # copy direktori beserta isinya
+       - format penggunaan: 
+        1. cp file_sumber file_tujuan  -> copy file
+        2. cp -r dir_sumber dir_tujuan -> copy direktori beserta isinya
     - mv: Move - Memindahkan atau me-rename file/direktori
-    format penggunaan:               
-    mv file_lama file_baru              # rename file
-    mv file /path/tujuan/               # pindahkan file ke direktori lain
-    mv dir_lama dir_baru                # rename direktori 
+       - format penggunaan:               
+        1. mv file_lama file_baru -> rename file
+        2. mv file /path/tujuan/  -> pindahkan file ke direktori lain
+        3. mv dir_lama dir_baru   -> rename direktori 
     - rm: Remove - Menghapus file atau direktori
-    format pengguanaan : 
-    rm file.txt                         # Hapus file
-    rm -i file.txt                      # Hapus file dengan konfirmasi
-    rm -r direktori/                    # Hapus direktori beserta isinya 
-    rm -rf direktori/                   # Hapus paksa direktori tanpa konfirmasi
+       - format pengguanaan : 
+        1. rm file.txt         -> Hapus file
+        2. rm -i file.txt      -> Hapus file dengan konfirmasi
+        3. rm -r direktori/    -> Hapus direktori beserta isinya 
+        4. rm -rf direktori/   -> Hapus paksa direktori tanpa konfirmasi
         
-3.  Perbedaan Symbolic Link: Hard Link vs Soft Link
-![js4_TP_3](image/js4_TP_3.png)
+3.  Perbedaan Symbolic Link: Hard Link vs Soft Link <br>
+![js4_TP_3](image/js4_TP_3.png) 
 
-4. Penjelasan Perintah: file, find, which, locate, grep
-![js4_TP_4](image/js4_TP_4.png)
+4. Penjelasan Perintah: file, find, which, locate, grep <br>
+![js4_TP_4](image/js4_TP_4.png) 
 
 
 ## Percobaan 1 : Direktory
@@ -143,4 +143,57 @@ $ ls -l
 ![js4_percobaan2_3](image/js4_percobaan2_3.png)
 
 ## Percobaan 3 : Symbolic link
-1. 
+1. membuat shortcut (file link)
+```
+$ echo "Hallo apa khabar" . halo.txt
+$ ls -l
+$ ln halo.txt z
+$ ls -l
+$ cat z
+$ mkdir mydir
+$ ln z mydir/halo.juga
+$ cat mydir/halo.juga
+$ ln -s z bye.txt
+$ ls -l bye.txt
+$ cat bye.txt
+$ ls -l
+$ file halo.txt
+$ file bye.txt
+```
+![js4_percobaan3](image/js4_percobaan3.png)
+
+## Percobaan 4 : Melihat isi file
+```
+$ ls -l
+$ file halo.txt
+$ file bye.txt
+```
+![js4_percobaan4](image/js4_percobaan4.png)
+
+### percobaan 5 : Mencari file 
+1. Perintah find 
+```
+$ find /home -name "*.txt" -print > myerror.txt
+$ cat myerror.txt
+$ find . -name "*.txt" -exec wc -l '{}' ";"
+```
+![js4_percobaan5.1](image/js4_percobaan5.1.png)
+
+2. Perintah which
+```
+$ which ls
+```
+![js4_percobaan5.2](image/js4_percobaan5.2.png)
+
+3. Perintah locate
+```
+locate "*.txt" 
+```
+![js4_percobaan5.3](image/js4_percobaan5.3.png)
+
+## Percobaan 6 : 
+1. mencari text pada file 
+```
+$ grep hallo *.txt
+```
+![js4_percobaan6](image)
