@@ -306,7 +306,7 @@ $ ln -s /dev/tty terminal
 $ ls -l 
 ```
 ![js4_latihan11](image/js4_latihan11.png)
-- Sistem akan memunculkan pesan error: ln: failed to create hard link 'terminal' => '/dev/tty': Invalid cross-device link.
+- Sistem akan memunculkan pesan error: ln: failed to create hard link 'terminal' => '/dev/tty': Invalid cross-device link. Tanpa -s (ln /dev/tty terminal), berarti mencoba membuat Hard Link. Linux melarang ini karena /dev/tty berada di sistem file yang berbeda dengan folder play.
 
 12. butalah file bernama hello.txt yang berisi kata "hello word". Dapatkah anda gunakan "cp" menggunakan "terminal" sebagai file asal untuk menghasilkan efek yang sama?
 ```
@@ -354,5 +354,13 @@ rm -rf work
     - Pohon Struktur File dan Direktori (Percobaan 1 Poin 3)
         Berdasarkan perintah mkdir A B C A/D A/E B/F A/D/A, struktur
         hirarkinya adalah sebagai berikut:
-        ![js4_Laporan1b](image/js4_laporan1b.png)
+        ![js4_Laporan1b](image/js4_laporan1b.png) <br>
         Struktur ini menunjukkan kemampuan Linux dalam menangani nested directories. Folder A di dalam folder D memiliki identitas yang berbeda dengan folder A di tingkat teratas karena memiliki jalur (path) yang unik.
+    - Error yang ditemukan :
+        1. mv: cannot stat 'contoh': No such file or directory
+        Penyebab: Terjadi inkonsistensi antara status file di disk dengan perintah yang diinput. Hal ini terjadi karena file asal telah diubah namanya atau dipindahkan pada langkah sebelumnya. Sistem tidak dapat melakukan operasi pada referensi yang sudah tidak ada.
+        2. rmdir: failed to remove 'B': Directory not empty
+        Penyebab: Perintah rmdir memiliki proteksi internal yang hanya mengizinkan penghapusan direktori kosong untuk mencegah kehilangan data secara tidak sengaja. Direktori B masih memiliki sub-direktori F.
+
+2. Kesimpulan 
+    Sistem operasi Linux mengelola sumber daya melalui hirarki file yang sangat ketat namun fleksibel. Keberhasilan operasi sangat bergantung pada pemahaman user terhadap jalur file (path), izin akses (permissions), dan ketersediaan paket utilitas. Penggunaan shell memerlukan ketelitian sintaksis karena setiap karakter (seperti /, ., atau ..) memiliki arti fungsional yang spesifik dalam manajemen memori dan penyimpanan.
